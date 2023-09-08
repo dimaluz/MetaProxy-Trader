@@ -50,6 +50,6 @@ Automation MT4.py
 7. Monitor and Analyze Results: Monitor the output and logs of
 your automation scripts to ensure they are executing as expected. Inspect
 the app’s behavior in the Genymotion emulator as the automation scripts
-run. Use MITM Proxy to capture and analyze network traffic for debugging and testing purposes.
+run. Use MITM Proxy to capture and analyze network traffic for debugging and testing purposes.
 
 
