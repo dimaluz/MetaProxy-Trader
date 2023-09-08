@@ -15,7 +15,7 @@ of several key components.
 
 Follow the below steps to get started:
 1. Set Up Genymotion Android Emulator: Download and install GenyMotion from their official website. Create a virtual device in Genymotion
-with the desired Android version and specifications. Install the MetaTrader app on the virtual device using either the Google Play Store or an
+with the desired Android version and specifications. Install the MetaTrader app on the virtual device using either the Google Play Store or an
 APK file.
 
 2. Configure MITM Proxy Settings: Install and configure MITM
