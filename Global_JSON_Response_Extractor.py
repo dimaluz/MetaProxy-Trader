@@ -3,7 +3,7 @@ import json
 from mitmproxy import ctx
 
 # user directory path
-USER_DIRECTORY = "C:/Users/T. Bannikere/Desktop/IMDEA - MetaScam/Meta_Trader_brokers/MT5_brokers"
+USER_DIRECTORY = "C:/Users/Meta_Trader_brokers/MT5_brokers"
 
 # Store responses in a dictionary with a counter
 response_counter = 1
