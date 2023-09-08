@@ -12,7 +12,7 @@ desired_cap = {
     "platformName": "Android",
     "appium:appPackage": "net.metaquotes.metatrader4",
     "appium:appActivity": "net.metaquotes.metatrader4.ui.MainActivity",
-    "appium:app": "C:\\Users\\T. Bannikere\\Downloads\\MetaTrader 4 Forex Trading_400.1388_Apkpure.apk",
+    "appium:app": "C:\\Users\\Downloads\\MetaTrader 4 Forex Trading_400.1388_Apkpure.apk",
     "appium:deviceName": "emulator-5554"
 }
 
