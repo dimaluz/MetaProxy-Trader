@@ -17,7 +17,7 @@ adjust the proxy settings on the Genymotion emulator. Ensure that the
 virtual Android emulator’s IP address and port match your computer’s
 IP address and port.
 
- 'mitmproxy -s Global_JSON_Response_Extractor.py'
-
+```
+ mitmproxy -s Global_JSON_Response_Extractor.py
 
 4. 
