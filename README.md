@@ -39,7 +39,7 @@ Use the below Desired Capabilities and start the session:
 For MT4 "platformName":
 "Android", "appium:appPackage": "net.metaquotes.metatrader4",
 "appium:appActivity": "net.metaquotes.metatrader4.ui.MainActivity",
-"appium:app": "C:/Users/T. Bannikere/Downloads/MetaTrader4.apk"
+"appium:app": "C:/Users/Downloads/MetaTrader4.apk"
 ```
 6. Execute Automation Scripts: Write or use the provided automation scripts to interact with the MetaTrader app. Run the automation
 scripts. These scripts can simulate user interactions, validate app behavior, and perform tasks within the app.
