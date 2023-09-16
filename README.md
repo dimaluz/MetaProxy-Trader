@@ -52,4 +52,14 @@ your automation scripts to ensure they are executing as expected. Inspect
 the app’s behavior in the Genymotion emulator as the automation scripts
 run. Use MITM Proxy to capture and analyze network traffic for debugging and testing purposes.
 
+## Contributing
+We welcome contributions from the community. If you have ideas for improvement or find any issues, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+MetaTrader for providing valuable broker information.
+Our open-source community for their support and contributions.
+
 
