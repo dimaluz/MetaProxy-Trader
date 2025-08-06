@@ -1,4 +1,6 @@
 import time
+import random
+import string
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
@@ -7,6 +9,34 @@ from selenium.webdriver.common import actions
 from selenium.webdriver.common.actions import interaction
 from selenium.webdriver.common.actions.action_builder import ActionBuilder
 from selenium.webdriver.common.actions.pointer_input import PointerInput
+
+# Конфигурация поиска
+SEARCH_COMBINATIONS_COUNT = 100  # Количество уникальных комбинаций для поиска
+SEARCH_DELAY = 2  # Задержка после ввода поиска (секунды)
+CLEAR_DELAY = 1   # Задержка после очистки поля (секунды)
+
+def generate_search_combinations(num_combinations=100):
+    """
+    Генерирует список уникальных случайных комбинаций из букв и цифр длиной 3 символа
+    
+    Args:
+        num_combinations (int): Количество комбинаций для генерации
+    
+    Returns:
+        list: Список уникальных строк длиной 3 символа
+    """
+    # Создаем набор символов: буквы (a-z) + цифры (0-9)
+    characters = string.ascii_lowercase + string.digits
+    combinations = set()
+    
+    # Генерируем уникальные комбинации
+    while len(combinations) < num_combinations:
+        # Генерируем случайную комбинацию из 3 символов
+        combination = ''.join(random.choices(characters, k=3))
+        combinations.add(combination)
+    
+    # Возвращаем в виде списка для удобства итерации
+    return list(combinations)
 
 desired_cap = {
     "platformName": "Android",
@@ -45,21 +75,30 @@ try:
     el2 = driver.find_element(by=AppiumBy.ID, value="net.metaquotes.metatrader4:id/filter")
     el2.click()
 
-    # Define the set of letters to iterate through
-    letters = 'abcdefghijklmnopqrstuvwxyz'
-
- # Loop through all combinations of three letters from the defined set and a space
-    for i in range(len(letters)):
-        for j in range(len(letters)):
-            for space in [' ']:
-                keys = letters[i] + letters[j] + space
-                el2.send_keys(keys)
-                time.sleep(2)
-                el2.clear()
-                time.sleep(1)
+    # Генерируем случайные комбинации для поиска
+    search_combinations = generate_search_combinations(num_combinations=SEARCH_COMBINATIONS_COUNT)
+    
+    print(f"Начинаем поиск с {len(search_combinations)} уникальными комбинациями...")
+    
+    # Проходим по всем сгенерированным комбинациям
+    for idx, combination in enumerate(search_combinations, 1):
+        try:
+            print(f"Поиск {idx}/{len(search_combinations)}: '{combination}'")
+            
+            # Вводим комбинацию в поле поиска
+            el2.send_keys(combination)
+            time.sleep(SEARCH_DELAY)  # Ждем загрузки результатов
+            
+            # Очищаем поле для следующего поиска
+            el2.clear()
+            time.sleep(CLEAR_DELAY)  # Небольшая пауза между поисками
+            
+        except Exception as search_error:
+            print(f"Ошибка при поиске '{combination}': {search_error}")
+            continue
 
 except Exception as e:
-    print("An error occurred:", e)
+    print("Произошла ошибка при инициализации поиска:", e)
 time.sleep(3)
 
 driver.quit()
