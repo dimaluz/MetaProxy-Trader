@@ -18,6 +18,7 @@ of several key components.
 **Для быстрого старта:**
 - 🚀 **[QUICK_START_GUIDE.md](QUICK_START_GUIDE.md)** - Подробная пошаговая инструкция
 - ✅ **[CHECKLIST.md](CHECKLIST.md)** - Быстрый чеклист для запуска
+- 📱 **[AVD_SETUP_GUIDE.md](AVD_SETUP_GUIDE.md)** - Адаптация для Android Studio AVD
 
 Follow the below steps to get started:
 1. Set Up Genymotion Android Emulator: Download and install GenyMotion from their official website. Create a virtual device in Genymotion
