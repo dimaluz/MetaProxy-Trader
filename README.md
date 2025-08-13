@@ -15,9 +15,13 @@ of several key components.
 
 ## 📚 Документация
 
-**Для быстрого старта:**
-- 🚀 **[QUICK_START_GUIDE.md](QUICK_START_GUIDE.md)** - Подробная пошаговая инструкция
-- ✅ **[CHECKLIST.md](CHECKLIST.md)** - Быстрый чеклист для запуска
+**Для физического устройства Samsung A50:**
+- 🚀 **[DETAILED_LAUNCH_GUIDE.md](DETAILED_LAUNCH_GUIDE.md)** - Подробная пошаговая инструкция
+- ✅ **[QUICK_LAUNCH_CHECKLIST.md](QUICK_LAUNCH_CHECKLIST.md)** - Быстрый чеклист для запуска
+- 📱 **[PHYSICAL_DEVICE_SETUP.md](PHYSICAL_DEVICE_SETUP.md)** - Настройка Samsung A50
+
+**Для эмуляторов:**
+- 🚀 **[QUICK_START_GUIDE.md](QUICK_START_GUIDE.md)** - Инструкция для Genymotion
 - 📱 **[AVD_SETUP_GUIDE.md](AVD_SETUP_GUIDE.md)** - Адаптация для Android Studio AVD
 
 Follow the below steps to get started:
