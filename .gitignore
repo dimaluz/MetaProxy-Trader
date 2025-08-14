@@ -138,8 +138,6 @@ Meta_Trader_brokers/
 MetaTrader_Brokers_Data/
 response_*.json
 
-# APK files
-*.apk
 
 # MITM proxy certificates
 *.pem
