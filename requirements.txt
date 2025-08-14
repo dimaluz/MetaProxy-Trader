@@ -10,11 +10,11 @@
 
 # Автоматизация Android приложений через Appium
 # Используется в: Automation_MT4.py
-appium-python-client==4.1.0
+appium-python-client==3.1.1
 
 # Веб-драйвер для автоматизации браузера и мобильных приложений
 # Используется в: Automation_MT4.py (WebDriverWait, expected_conditions)
-selenium==4.15.2
+selenium==4.10.0
 
 # MITM прокси для перехвата и анализа HTTP/HTTPS трафика
 # Используется в: Global_JSON_Response_Extractor.py
